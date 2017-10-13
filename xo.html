@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>XO</title>
+    <link rel="stylesheet" href="./css/xo.css">
 </head>
 <body>
-    <div class="game-container">
-        
+    <div class="gameHover">
+        <h1><span id="whoWin"></span> Won!</h1>
+        <button type="button" name="button" onclick="restarGame()">Restart</button>
     </div>
+    <div class="game-container">
+        <div class="row">
+            <div class="top squ" id="t1" onclick="mark('t1')"></div>
+            <div class="top squ" id="t2" onclick="mark('t2')"></div>
+            <div class="top squ" id="t3" onclick="mark('t3')"></div>
+        </div>
+        <div class="row">
+            <div class="middle squ" id="m1" onclick="mark('m1')"></div>
+            <div class="middle squ" id="m2" onclick="mark('m2')"></div>
+            <div class="middle squ" id="m3" onclick="mark('m3')"></div>
+        </div>
+        <div class="row">
+            <div class="bottom squ" id="b1" onclick="mark('b1')"></div>
+            <div class="bottom squ" id="b2" onclick="mark('b2')"></div>
+            <div class="bottom squ" id="b3" onclick="mark('b3')"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/xo.js"></script>   
 </body>
 </html>
