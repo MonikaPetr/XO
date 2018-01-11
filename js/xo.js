@@ -64,7 +64,7 @@ function checkWin(element) {
    }
     console.log(win);
    if(win){
-       document.getElementById("gameHover").style.display = "block";
+       document.querySelector(".gameHover").style.display = "block";
        document.getElementById("whoWin").innerHTML = element;
    }
         
